@@ -1,0 +1,40 @@
+//
+//  PrefixHeader.pch
+//  HireMile
+//
+//  Created by abc on 04/10/17.
+//  Copyright © 2017 abc. All rights reserved.
+//
+
+//#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+#define IS_IPHONE_5_IOS7 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 568.0f)
+#define IS_IPHONE_6_IOS7 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 667.0f)
+#define IS_IPHONE_6P_IOS7 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 736.0f)
+#define IS_IPHONE_4_AND_OLDER_IOS7 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height < 568.0f)
+#define Keyboard_Height 216
+#define Changed_textView_Height 20
+
+#define BlueColor [UIColor colorWithRed:24.0/255.0f green:51/255.0f blue:113/255.0f alpha:1.0]
+#define WhiteColor [UIColor colorWithRed:255/255.0f green:255/255.0f blue:255/255.0f alpha:1.0]
+#define PinkColor [UIColor colorWithRed:210/255.0f green:15/255.0f blue:134/255.0f alpha:1.0]
+#define GreenColor [UIColor colorWithRed:34/255.0f green:242/255.0f blue:5/255.0f alpha:1.0]
+#define SkyBlueColor [UIColor colorWithRed:13/255.0f green:254/255.0f blue:255/255.0f alpha:1.0]
+#define DarkOrangeColor [UIColor colorWithRed:249/255.0f green:100/255.0f blue:3/255.0f alpha:1.0]
+#define LightparpalColor [UIColor colorWithRed:213/255.0f green:96/255.0f blue:228/255.0f alpha:1.0]
+#define PINK_COLOR [UIColor colorWithRed:(216/255.0f) green:(43/255.0f) blue:(140/255.0f) alpha:1.0f]
+
+#define BlueBGImage [UIImage imageNamed:@"circle"]
+#define WhiteBgImage [UIImage imageNamed:@"circle-border"]
+#define NavigationHidden [self.navigationController setNavigationBarHidden:YES];
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#endif /* PrefixHeader_pch */
